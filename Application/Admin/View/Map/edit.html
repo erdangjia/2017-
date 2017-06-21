@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <form id="reg" action="__URL__/edit" method="post">
+        <input type="hidden" name="id" value="{$info['id']}">
+        <p>公司名称：<input type="text" name="shop_name" value="{$info['shop_name']}"></p>
+        <p>公司地址：<input type="text" name="address" value="{$info['address']}"></p>
+        <p>公司电话：<input type="text" name="tel" value="{$info['tel']}"></p>
+        <p>经度：<input type="text" class="input" name="jd" value="{$info['jd']}" /></p>
+        <p style="margin:20px 0">纬度：<input type="text" class="input" name="wd" value="{$info['wd']}" /></p>
+        <p><input type="submit" name="submit" class="btn" value="提交"/></p>
+    </form>
+</center>
+</body>
+</html>

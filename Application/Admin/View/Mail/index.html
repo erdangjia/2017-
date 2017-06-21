@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <span>欢迎{$_SESSION['user']}的登录|<a href="{:U('Index/index')}">退出</a></span>
+    <a href="{:U('Mail/send')}">群发Email</a>
+    <table border="1">
+        <tr>
+            <td>用户名</td>
+            <td>邮箱</td>
+        </tr>
+        <foreach name="data" item="val">
+            <tr>
+                <td>{$val['username']}</td>
+                <td>{$val['email']}</td>
+        </foreach>
+    </table>
+</center>
+</body>
+</html>
